@@ -9,7 +9,7 @@ import FixedNavbar from "./components/FixedNavbar";
 import { AnimatePresence } from "framer-motion";
 
 export default function Home() {
-  const mainref = useRef()
+  const mainref: any = useRef()
   const [isScrolling, setIsScolling] = useState(false)
   const [fullNav, setFullNav] = useState(false)
 
