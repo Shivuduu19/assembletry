@@ -22,12 +22,12 @@ const FixedNavbar = ({ fullNav }: any) => {
         linksInitial: {
             // x: "150%",
             opacity: 0,
-            width: 0,
+            // width: 0,
 
         },
         links: {
             // x: "50%",
-            width: '100%',
+            // width: '100%',
 
             opacity: 1,
             transition: {
@@ -46,10 +46,10 @@ const FixedNavbar = ({ fullNav }: any) => {
             }
         },
         NavInitial: {
-            scaleX: '50%',
+            // scaleX: '50%',
         },
         Nav: {
-            scaleX: '100%',
+            // scaleX: '100%',
             transition: {
                 ease: 'easeIn',
                 duration: 0.5
