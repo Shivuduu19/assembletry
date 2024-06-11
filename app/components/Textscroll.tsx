@@ -20,7 +20,7 @@ const Textscroll = () => {
     return (
         <>
             <div ref={element} className=" rounded-l-[50px] h-[300vh] rounded-r-[50px] mx-6 px-6  py-0 bg-[#111] z-[6] ">
-                <div className="sticky top-12 flex pt-56 px-20 pb-20 flex-none flex-wrap items-center mx-auto text-[70px] text-gray-300">
+                <div className="sticky top-12 flex pt-56 px-20 pb-20 flex-none flex-wrap items-center mx-auto text-[40px] text-gray-300">
                     {
                         words.map((word, i) => {
                             const start = i / words.length
