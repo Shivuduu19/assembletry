@@ -7,6 +7,7 @@ import { myFontBook } from "./staticFonts/fonts";
 import { useEffect, useRef, useState } from "react";
 import FixedNavbar from "./components/FixedNavbar";
 import { AnimatePresence } from "framer-motion";
+import Textscroll from "./components/Textscroll";
 
 export default function Home() {
   const mainref: any = useRef()
@@ -16,7 +17,7 @@ export default function Home() {
   const handleScroll = () => {
     if (mainref.current) {
       const mainTop = mainref.current.getBoundingClientRect().bottom
-      console.log(isScrolling);
+      // console.log(isScrolling);
       if (mainTop < 0) {
         setIsScolling(true)
       } else {
@@ -118,11 +119,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div>
-        <div>
-
-        </div>
-      </div>
+      <Textscroll />
     </>
   );
 }
