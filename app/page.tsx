@@ -22,7 +22,7 @@ export default function Home() {
       } else {
         setIsScolling(false)
       }
-      if (window.scrollY >= window.innerHeight - 100) {
+      if (window.scrollY >= window.innerHeight) {
         setFullNav(true)
       } else {
         setFullNav(false)
