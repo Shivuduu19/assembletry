@@ -37,7 +37,7 @@ const FixedNavbar = ({ fullNav }: any) => {
             }
         },
         startInitial: {
-            x: '-200%'
+            x: '-100%'
         },
         start: {
             x: '0',
@@ -67,24 +67,24 @@ const FixedNavbar = ({ fullNav }: any) => {
     // console.log(scrollYProgress);
 
     return (
-        <AnimatePresence>
-            <motion.div key='nav' initial='initial' variants={NavAnimations} animate='animate' className='w-auto fixed  h-auto left-1/2 top-6 opacity-1 z-[7] '>
-                {!fullNav ?
-                    <div className="w-auto   self-stretch h-min flex flex-none justify-center">
-                        <div className="h-auto w-auto relative flex-none z-[5] bg-[#232323]  rounded-[100px]  ">
-                            <a href="" className=" block opacity-[1][box-shadow:rgba(0, 0, 0, 0.15)_8px_10px_15px_0px] px-8 py-3 h-min w-min">
-                                <div className="flex items-center gap-3 p-0 relative ">
-                                    <div className="bg-[#f1fd82] rounded-[100%] w-2 aspect-square relative flex-none"></div>
-                                    <div className="flex-none h-auto relative w-auto whitespace-pre text-[#fff] ">
-                                        <p>Start Free</p>
-                                    </div>
+        <motion.div key='nav' initial='initial' variants={NavAnimations} animate='animate' className='w-auto fixed  h-auto left-1/2 top-6 opacity-1 z-[7] '>
+            {!fullNav ?
+                <div className="w-auto   self-stretch h-min flex flex-none justify-center">
+                    <div className="h-auto w-auto relative flex-none z-[5] bg-[#232323]  rounded-[100px]  ">
+                        <a href="" className=" block opacity-[1][box-shadow:rgba(0, 0, 0, 0.15)_8px_10px_15px_0px] px-8 py-3 h-min w-min">
+                            <div className="flex items-center gap-3 p-0 relative ">
+                                <div className="bg-[#f1fd82] rounded-[100%] w-2 aspect-square relative flex-none"></div>
+                                <div className="flex-none h-auto relative w-auto whitespace-pre text-[#fff] ">
+                                    <p>Start Free</p>
                                 </div>
-                            </a>
-                        </div>
+                            </div>
+                        </a>
                     </div>
+                </div>
 
-                    :
-                    <motion.div key='startNav' exit='exit' variants={NavAnimations} initial='NavInitial' animate='Nav' className=" flex gap-3 justify-center items-center px-6 py-3 w-auto h-[43px] [box-shadow:rgba(0, 0, 0, 0.15)_8px_10px_15px_0px] bg-[#232323] text-[#fff]  rounded-[100px] ">
+                :
+                <motion.div key='startNav' exit='exit' variants={NavAnimations} initial='NavInitial' animate='Nav' className=" flex gap-3 justify-center items-center px-6 py-3 w-auto h-[43px] [box-shadow:rgba(0, 0, 0, 0.15)_8px_10px_15px_0px] bg-[#232323] text-[#fff]  rounded-[100px] ">
+                    <AnimatePresence>
                         <motion.div layout variants={NavAnimations} initial='startInitial' animate='start' className='order-10 text-[#f1fd82]' >
                             <a href="" className='flex flex-none items-center gap-2 h-10 '>
                                 <div><p>Start Free</p></div>
@@ -93,35 +93,35 @@ const FixedNavbar = ({ fullNav }: any) => {
                                 </svg></defs><use href="#svg286516480_576"></use></svg></div>
                             </a>
                         </motion.div>
-                        <div>
-                            <a href="" className='flex items-center flex-none gap-2'>
-                                <div className="bg-[#f1fd82] rounded-[100%] w-2 aspect-square relative flex-none"></div>
-                                <motion.div variants={NavAnimations} initial='linksInitial' animate='links'>
-                                    <p>Product</p>
-                                </motion.div>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="">
-                                <motion.div variants={NavAnimations} initial='linksInitial' animate='links'>
-                                    <p>Pricing</p>
-                                </motion.div>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="">
-                                <motion.div variants={NavAnimations} initial='linksInitial' animate='links'>
-                                    <p>
-                                        Login
-                                    </p>
-                                </motion.div>
-                            </a>
-                        </div>
-                    </motion.div>
+                    </AnimatePresence>
+                    <div>
+                        <a href="" className='flex items-center flex-none gap-2'>
+                            <div className="bg-[#f1fd82] rounded-[100%] w-2 aspect-square relative flex-none"></div>
+                            <motion.div variants={NavAnimations} initial='linksInitial' animate='links'>
+                                <p>Product</p>
+                            </motion.div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <motion.div variants={NavAnimations} initial='linksInitial' animate='links'>
+                                <p>Pricing</p>
+                            </motion.div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <motion.div variants={NavAnimations} initial='linksInitial' animate='links'>
+                                <p>
+                                    Login
+                                </p>
+                            </motion.div>
+                        </a>
+                    </div>
+                </motion.div>
 
-                }
-            </motion.div>
-        </AnimatePresence>
+            }
+        </motion.div>
     )
 }
 
