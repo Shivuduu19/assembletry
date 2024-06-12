@@ -44,11 +44,11 @@ const Main = ({ mainref, isScrolling }: any) => {
                     <div className="flex flex-col gap-6 items-center p-0 relative w-min overflow-hidden " >
                         <div className="absolute h-[70px] w-[160px] top-[64px] right-[147px] bg-[#f1fd82] z-[0] opacity-50 rounded-[200px]" ></div>
                         <div ref={mainref} className="flex flex-col flex-none gap-4">
-                            <div className={`relative w-[758px] ${myFontSemi.variable} font-anthroBold flex flex-none font-normal  leading-[1] justify-center items-center flex-col`}>
-                                <h1 className="text-[64px] font-normal tracking-[-0.04em]">
+                            <div className={`relative w-[758px] ${myFontSemi.variable} font-anthroBold text-[#000] flex flex-none font-normal   leading-[1] justify-center items-center flex-col`}>
+                                <h1 className="text-[64px] w-full flex flex-none justify-center items-center font-normal tracking-[-0.04em]">
                                     Organize your
                                 </h1>
-                                <h1 className="text-[64px] font-normal tracking-[-0.04em]">projects in time.</h1>
+                                <h1 className="text-[64px] w-full flex items-center justify-center  font-normal tracking-[-0.04em]">projects in time.</h1>
                             </div>
                             <div className={`flex flex-none justify-center items-center flex-col text-[#333333] ${myFontBook.variable} font-anthroBook text-[23px]`}>
                                 <h3>Every file, note, convo and to-do.</h3>
