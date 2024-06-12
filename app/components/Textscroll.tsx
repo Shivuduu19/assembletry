@@ -25,7 +25,7 @@ const Textscroll = () => {
                         words.map((word, i) => {
                             const start = i / words.length
                             const end = start + 1 / words.length
-                            console.log(start, end);
+                            // console.log(start, end);
 
                             return <Word key={i} range={[start, end]} progress={scrollYProgress}>{word}</Word>
                         })
@@ -40,10 +40,10 @@ const Textscroll = () => {
 const Word = ({ children, range, progress }: any) => {
     const opacity = useTransform(progress, range, [0, 1])
     return (
-        <p className="mr-3 mt-3 relative">
+        <div className="mr-3 mt-3 relative">
             <p className="opacity-30 absolute" >{children}</p>
             <motion.p style={{ opacity }} className="" >{children}</motion.p>
-        </p>
+        </div>
     )
 }
 

@@ -17,7 +17,7 @@ const Header = () => {
     return (
         <>
 
-            <div className="absolute flex items-center left-[-1px] w-full justify-between bg-[#fcfcfc] h-[70px] flex-none flex-nowrap px-6 py-0 overflow-visible top-0 z-[8]">
+            <div className="hidden sm:absolute sm:flex sm:items-center sm:left-[-1px] sm:w-full sm:justify-between bg-[#fcfcfc] h-[70px] flex-none flex-nowrap px-6 py-0 overflow-visible top-0 z-[8]">
                 <div>
                     <Image src="/assemblelogo.png" alt=" assemble logo" width={120} height={24} />
                 </div>

@@ -8,6 +8,7 @@ import { useEffect, useRef, useState } from "react";
 import FixedNavbar from "./components/FixedNavbar";
 import { AnimatePresence } from "framer-motion";
 import Textscroll from "./components/Textscroll";
+import Boxes from "./components/Boxes";
 
 export default function Home() {
   const mainref: any = useRef()
@@ -56,68 +57,7 @@ export default function Home() {
           <Header key='header' />
           <Main key='main' mainref={mainref} isScrolling={isScrolling} />
         </AnimatePresence>
-        <div className="z-[1] w-[1300px] absolute top-0 max-w-[1300px] h-[1400px] flex-none ">
-          <div>
-            <div className="absolute right-[109px] top-[170px]">
-              <Image
-                src='/icons/Yo3Zm3iXmYJ9P3HWO4RHiQfYVPw.png'
-                alt="dots square"
-                width={149}
-                height={149}
-              />
-            </div>
-          </div>
-          <div>
-            <div className="absolute right-[282px] top-[422px]">
-              <Image
-                src='/icons/ktMI7cL3AsQSG3r3EJh8BEQceDI.png'
-                alt="three circles"
-                width={149}
-                height={149}
-              />
-            </div>
-          </div>
-          <div>
-            <div className="absolute right-[-12px] top-[552px]">
-              <Image
-                src='/icons/ShCQxjJy61JrGpE5v7es2XlETiU.png'
-                alt="dots square"
-                width={149}
-                height={149}
-              />
-            </div>
-          </div>
-          <div>
-            <div className="absolute left-[90px] top-[126px]">
-              <Image
-                src='/icons/OzBmnUozCSDim9uK8XJysz9oS4.png'
-                alt="dots square"
-                width={149}
-                height={149}
-              />
-            </div>
-          </div>
-          <div>
-            <div className="absolute left-[260px] top-[391px]">
-              <Image
-                src='/icons/zvAD09XV1CEm0QIAAU1t9KRAiY.png'
-                alt="dots square"
-                width={149}
-                height={149}
-              />
-            </div>
-          </div>
-          <div>
-            <div className="absolute left-[-13px] top-[531px]">
-              <Image
-                src='/icons/ppPBEZYfJ9hDrLcslqmjrveePk.png'
-                alt="dots square"
-                width={149}
-                height={149}
-              />
-            </div>
-          </div>
-        </div>
+        <Boxes />
       </div>
       <Textscroll />
     </>
