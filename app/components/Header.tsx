@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { motion } from 'framer-motion'
-import { myFontSemi } from "../staticFonts/fonts";
+import { myFont } from "../staticFonts/fonts";
 
 const Header = () => {
     const arrowMotion = {
@@ -17,25 +17,25 @@ const Header = () => {
     return (
         <>
 
-            <div className="absolute flex items-center w-full justify-between bg-[#fcfcfc] h-[70px] flex-none flex-nowrap px-6 py-0 overflow-visible top-0 z-[8]">
+            <div className="absolute flex items-center left-[-1px] w-full justify-between bg-[#fcfcfc] h-[70px] flex-none flex-nowrap px-6 py-0 overflow-visible top-0 z-[8]">
                 <div>
                     <Image src="/assemblelogo.png" alt=" assemble logo" width={120} height={24} />
                 </div>
 
 
-                <div className={`flex flex-none items-center justify-start gap-6 h-[70px] p-0 ${myFontSemi.variable} font-anthroBold text-[#757575]`}>
-                    <div className=" flex flex-none items-center h-10 w-[70px]">
-                        <a href="">
+                <div className={`flex  items-center justify-center gap-6  h-full  ${myFont.variable} font-sans text-[16px] leading-[1.2] text-[#757575]`}>
+                    <div className=" flex    h-[40px]   ">
+                        <a href="" className="flex  hover:text-[#111]   justify-center w-[70px] items-center">
                             <p>Pricing</p>
                         </a>
                     </div>
-                    <div className=" flex flex-none items-center h-10 w-[70px]" >
-                        <a href="">
+                    <div className=" flex    h-[40px]    " >
+                        <a href="" className="flex w-[70px] hover:text-[#111]  justify-center  items-center">
                             <p>Log In</p>
                         </a>
                     </div>
 
-                    <motion.div key={3} whileHover='hover' className=" flex flex-none items-center relative h-auto w-auto px-6 py-3 bg-[#232323] rounded-[100px]">
+                    <motion.div key={3} whileHover='hover' className=" flex  items-center relative h-auto w-[140px]  px-6 py-3 bg-[#232323] rounded-[100px]">
                         <a href="" className="w-[140px] ">
                             <div className="flex items-center justify-center flex-none gap-2 h-min ">
                                 <div className="text-[#fff]">Sign Up</div>

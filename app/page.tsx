@@ -49,7 +49,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="relative w-auto min-h-[250vh] flex justify-center overflow-hidden ">
+      <div className="relative w-auto min-h-[250vh] flex justify-center overflow-hidden bg-[#fcfcfc]">
         <AnimatePresence>
 
           {isScrolling && <FixedNavbar fullNav={fullNav} />}
