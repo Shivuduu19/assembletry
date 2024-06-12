@@ -68,7 +68,7 @@ const FixedNavbar = ({ fullNav }: any) => {
     // console.log(scrollYProgress);
 
     return (
-        <motion.div key='nav' initial='initial' variants={NavAnimations} animate='animate' className='w-auto hidden sm:fixed   h-auto left-1/2 top-6 opacity-1 z-[7] '>
+        <motion.div key='nav' initial='initial' variants={NavAnimations} animate='animate' className='w-auto hidden sm:block fixed   h-auto left-1/2 top-6 opacity-1 z-[7] '>
             {!fullNav ?
                 <div className="w-auto   self-stretch h-min flex flex-none justify-center">
                     <div className="h-auto w-auto relative flex-none z-[5] bg-[#232323]  rounded-[100px]  ">
