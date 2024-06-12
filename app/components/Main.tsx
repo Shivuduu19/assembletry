@@ -8,7 +8,7 @@ const Main = ({ mainref, isScrolling }: any) => {
     const startfree = {
         hover: {
             // x: 10,
-            width: '24%',
+            width: '100%',
             transition: {
                 duration: 0.5
             }

@@ -52,16 +52,12 @@ const FixedNavbar = ({ fullNav }: any) => {
             scaleX: '100%',
             transition: {
                 ease: 'easeOut',
-                layout: { duration: 0.2 }
+                layout: { duration: 0.5 }
 
             }
         },
         exit: {
-            scaleX: '0%',
-            transition: {
-                type: 'spring',
-                duration: 0.5
-            }
+            scaleX: '-70%',
         }
     }
     // const ref = useRef(null)
@@ -72,9 +68,7 @@ const FixedNavbar = ({ fullNav }: any) => {
     // console.log(scrollYProgress);
 
     return (
-        <motion.div key='nav' initial='initial' variants={NavAnimations} animate='animate' className='w-auto fixed hidden sm:block h-auto left-1/2 top-6 opacity-1 z-[7] '>
-
-
+        <motion.div key='nav' initial='initial' variants={NavAnimations} animate='animate' className='w-auto fixed  h-auto left-1/2 top-6 opacity-1 z-[7] '>
             {!fullNav ?
                 <div className="w-auto   self-stretch h-min flex flex-none justify-center">
                     <div className="h-auto w-auto relative flex-none z-[5] bg-[#232323]  rounded-[100px]  ">
