@@ -7,12 +7,12 @@ const FixedNavbar = ({ fullNav }: any) => {
         initial: {
             // y: -50,
             x: "-50%",
-            opacity: 1,
+            // opacity: 1,
         },
         animate: {
             // y: 0,
             x: '-50%',
-            opacity: 1,
+            // opacity: 1,
             // transition: {
             //     type: 'spring',
             //     damping: 10,
