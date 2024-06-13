@@ -4,8 +4,8 @@ import React, { useEffect, useRef } from "react"
 import { myFont, myFontBook } from "../staticFonts/fonts"
 
 
-const Textscroll = () => {
-    const element = useRef(null)
+const Textscroll = ({ element }: any) => {
+
     const paragraph = `At some point along the way project management tools got too complex  instead of simplifying work they did the opposite So we stripped it all away  and chose to organize everything by the most basic fundamental concept: time 
  `
     const { scrollYProgress } = useScroll({
