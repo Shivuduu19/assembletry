@@ -59,6 +59,8 @@ const Main = ({ mainref, isScrolling }: any) => {
                                 <h3>In a calendar.</h3>
                             </div>
                         </div>
+
+                        {/* mobile main button */}
                         <div className="flex flex-none gap-4 sm:hidden flex-col justify-center items-center">
 
                             <div className="w-auto  top-2  self-stretch h-min flex flex-none justify-center ">
